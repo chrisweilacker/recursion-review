@@ -7,10 +7,10 @@
 var getElementsByClassName = function(className, node) {
   // your code here
   var result = [];
-  debugger;
+  // debugger;
   var node = node || document.body;
 
-  if (node.classList.contains(className)) {
+  if (node.classList && node.classList.contains(className)) {
     result.push(node);
   }
 
